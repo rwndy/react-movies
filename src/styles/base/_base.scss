@@ -1,3 +1,5 @@
+@import "../abstract/variabels";
+
 *,
 *::before,
 *::after {
@@ -6,10 +8,18 @@
   box-sizing: border-box;
 }
 
+// 1 rem = 10px 10px / 16px = 62.5%
+// 1 em = 16px
+
+html {
+  font-size: 62.5%;
+}
+
 img {
   border-style: none;
 }
 
 body {
   height: 100%;
+  background-color: $color-secondary;
 }
