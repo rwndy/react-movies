@@ -1,7 +1,7 @@
 import { GET_MOVIES } from '../../actionTypes'
 
 const initialState = {
-  movies: [],
+  movies: [1, 2, 3],
   response: true,
   totalResults: null,
   searchTerms: ''
