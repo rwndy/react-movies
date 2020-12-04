@@ -1,0 +1,50 @@
+@import "../abstract/variabels";
+
+.section-search {
+  display: flex;
+  justify-content: center;
+  &--form {
+    position: relative;
+    margin-bottom: 4.5rem;
+  }
+
+  &--term {
+    font-size: 1.8rem;
+    padding: 1rem 1rem 1rem .5rem;
+    display: block;
+    width: 30rem;
+    border: none;
+    border-bottom: 1px solid #707070;
+    background-color: $color-secondary;
+  }
+
+  &--term:focus { outline: none; }
+  &--bar { position: relative; display: block; width: 30rem; }
+  &--bar::before, &--bar::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background-color: #92817a;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+
+  &--bar:before {
+    left: 50%;
+  }
+
+  &--bar:after {
+    right: 50%;
+  }
+
+  &--term:focus ~ &--bar:before, &--term:focus ~ &--bar:after {
+    width: 50%;
+  }
+
+  animation: inputHighlighter 0.3s ease;
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+}

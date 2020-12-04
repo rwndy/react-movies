@@ -1,0 +1,14 @@
+@keyframes inputHighlighter {
+  from { background-color: #92817a; }
+  to { width: 0; background-color: transparent; }
+}
+
+@-webkit-keyframes inputHighlighter {
+  from { background-color: #92817a; }
+  to { width: 0; background-color: transparent; }
+}
+
+@-moz-keyframes inputHighlighter {
+  from { background-color: #92817a; }
+  to { width: 0; background-color: transparent; }
+}
