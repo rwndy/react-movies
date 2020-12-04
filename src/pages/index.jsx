@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { SearchMovies } from '../components'
+import { SearchMovies, Navbar } from '../components'
 import { useDispatch, useSelector } from 'react-redux'
 import { toNextPage, toPrevPage, moviesData } from '../redux/store/actions'
 
@@ -20,7 +20,7 @@ const HomePage = ()=> {
 
   return(
     <main>
-      <h1>Hello</h1>
+      <Navbar />
       <SearchMovies search={data} onSearch={handleSearch}/>
     </main>
   )

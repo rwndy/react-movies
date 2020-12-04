@@ -1,0 +1,42 @@
+@import "../abstract/variabels";
+
+.header {
+  background-color: #707070;
+  height: 6.8rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.navigation {
+  margin-left: 4rem;
+
+  &--brand {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 400;
+  }
+
+  &--nav {
+    margin-right: 4rem;
+    margin-top: 1rem;
+  }
+
+  &--list {
+    display: flex;
+  }
+
+  &--item {
+    list-style: none;
+    
+  }
+
+  &--link {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 1.7rem;
+  }
+
+}
