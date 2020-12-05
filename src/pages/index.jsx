@@ -1,27 +1,65 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState } from 'react'
-import { SearchMovies, Navbar } from '../components'
-import { useDispatch, useSelector } from 'react-redux'
-import { toNextPage, toPrevPage, moviesData } from '../redux/store/actions'
-
-
+import { SearchMovies, Navbar, DisplayMovies, Pagination } from '../components'
 
 const HomePage = ()=> {
-  const moviesData = useSelector(state => state.getMovies)
-  const [data, setData] = useState(moviesData)
-  const currentPages = useSelector(state => state.toPages.pages)
-  const dispatch = useDispatch()
-  // const api = `http://www.omdbapi.com/?apikey=faf7e5bb&s=${searchMovies}&page=${currentPages}`
+  const [films, setFilms] = useState([])
+  const [searchTerms, setSearchTerms] = useState('')
+  const [currentPage, setCurrentPage] = useState(1)
+  const [totalPages, setTotalPages] = useState(null)
+  const api = `http://www.omdbapi.com/?apikey=faf7e5bb&s=${searchTerms}`
 
   const handleSearch = e => {
-    setData({...data, [e.target.name]: e.target.value})
+    setSearchTerms(e.target.value)
   }
-  
- console.log(data)
 
+
+
+  const fetchFilms = async () => {
+    try {
+      const response = await fetch(`${api}&page=${currentPage}`)
+      const results = await response.json()
+      setFilms(results.Search)
+      setTotalPages(results.totalResults)
+    } catch(error) {
+      console.error(error)
+    }
+  }
+
+  const next = () => {
+    if (films.length === Math.floor(totalPages/10) || films.length === 0) {
+      console.error('error')
+    } else {
+      setCurrentPage(currentPage + 1)
+      fetchFilms()
+    }
+  }
+
+  const prev = () => {
+    if ( currentPage === 1 ) {
+      setCurrentPage(currentPage)
+    } else {
+      setCurrentPage(currentPage - 1)
+      fetchFilms()
+    }
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    fetchFilms()
+  }
+
+ console.log(films)
   return(
     <main>
       <Navbar />
-      <SearchMovies search={data} onSearch={handleSearch}/>
+      <SearchMovies search={searchTerms} onSearch={handleSearch} getSubmit={handleSubmit}/>
+      <DisplayMovies movies={films} />
+      {
+        films.length < parseInt(totalPages) ?
+        (<Pagination currentPages={currentPage} nextPages={next} prevPages={prev}/>) :
+        null
+      }
     </main>
   )
 }
