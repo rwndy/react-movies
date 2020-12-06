@@ -15,9 +15,7 @@ const HomePage = ()=> {
 
   const fetchFilms = async () => {
     try {
-      const response = await fetch(`http://www.omdbapi.com/?apikey=faf7e5bb&s=${searchTerms}&page=${currentPage}`, {
-        headers: { "Content-type": "application/json" }
-      })
+      const response = await fetch(`https://www.omdbapi.com/?apikey=faf7e5bb&s=${searchTerms}&page=${currentPage}`)
       const results = await response.json()
       setFilms(results.Search)
       setTotalPages(results.totalResults)
