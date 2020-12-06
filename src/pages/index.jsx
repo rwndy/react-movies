@@ -7,8 +7,6 @@ const HomePage = ()=> {
   const [searchTerms, setSearchTerms] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
   const [totalPages, setTotalPages] = useState(null)
-  const api = `http://www.omdbapi.com/?apikey=faf7e5bb&s=${searchTerms}`
-
   const handleSearch = e => {
     setSearchTerms(e.target.value)
   }
@@ -17,7 +15,9 @@ const HomePage = ()=> {
 
   const fetchFilms = async () => {
     try {
-      const response = await fetch(`${api}&page=${currentPage}`)
+      const response = await fetch(`http://www.omdbapi.com/?apikey=faf7e5bb&s=${searchTerms}&page=${currentPage}`, {
+        headers: { "Content-type": "application/json" }
+      })
       const results = await response.json()
       setFilms(results.Search)
       setTotalPages(results.totalResults)
