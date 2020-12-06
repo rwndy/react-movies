@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+
+  &--next-btn {
+    background-color: #707070;
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+  }
+
+  &--prev-btn {
+    background-color: #707070;
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+  }
+
+  &--pages {
+    font-size: 1.6rem;
+    padding: 0 4rem;
+  }
+
+  &--next-btn, &--prev-btn:focus {
+    outline: none;
+  }
+
+}

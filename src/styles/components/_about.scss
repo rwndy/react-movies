@@ -1,0 +1,22 @@
+.about {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+  flex-direction: column;
+
+  &--image {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--image > img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  &--name {
+    font-size: 4rem;
+    text-align: center;
+  }
+}

@@ -4,8 +4,12 @@
 
 @import "abstract/variabels";
 
+@import "components/about";
+@import "components/details-movie";
 @import "components/cards";
 @import "components/search";
 @import "components/navigation";
+@import "components/pagination";
 
 @import "layout/section";
+@import "layout/mobile";

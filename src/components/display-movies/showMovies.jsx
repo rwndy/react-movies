@@ -17,7 +17,7 @@ const DisplayMovies = ({movies}) => {
                 <h4 className="movies-cards--year">
                   Year: { movie.Year }
                 </h4>
-                <NavLink to={`/movies/${movie.imdbID}`}>more details</NavLink>
+                <NavLink to={`/movies-detail/${movie.imdbID}`}>more details</NavLink>
               </div>
             </div>
           ))

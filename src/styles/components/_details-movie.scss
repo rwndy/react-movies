@@ -1,0 +1,78 @@
+@import "../abstract/variabels";
+
+.movies-detail {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: $color-primary;
+    margin-top: 3.5rem;
+    flex-direction: column;
+    margin-bottom: 3.5rem;
+
+  &--img {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--img > img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 2rem;
+  }
+
+  // .movies-detail--description {
+  //   display: flex;
+  //   flex-direction: column;
+  //   padding-left: 2rem;
+  //   padding-right: 2rem;
+  // }
+
+  &--synopsis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+  }
+  
+
+  &--description > p {
+    color: $color-third;
+    font-size: 1.2rem;
+  }
+
+  &--title {
+    color: $color-third;
+    font-size: 4rem;
+    padding-left: 5rem;
+  }
+
+  &--plot {
+    padding: 0 7rem;
+  }
+
+  &--plot > h4 {
+    color: $color-third;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  &--back {
+    background-color: #bedbbb;
+    width: 60px;
+    height: 24px;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  &--back > a {
+    text-decoration: none;
+    color: #707070;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+}

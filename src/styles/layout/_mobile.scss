@@ -1,0 +1,332 @@
+@media only screen and (max-device-width: 480px), 
+only screen and (max-width: 480px) {
+  .movies-detail {
+
+    &--title {
+      font-size: 2rem;
+      padding: 0 2rem;
+    }
+
+    &--synopsis {
+      flex-direction: column;
+      padding-left: 0;
+    }
+
+    &--description {
+      padding: 1rem 2rem 2rem;
+    }
+
+    &--plot {
+      padding: 0 2rem;
+    }
+
+    &--plot > h4 {
+      font-size: 1.4rem;
+    }
+
+  }
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .movies-detail {
+
+      &--title {
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+  
+      &--synopsis {
+        flex-direction: column;
+        padding-left: 0;
+      }
+  
+      &--description {
+        padding: 1rem 2rem 2rem;
+      }
+  
+      &--plot {
+        padding: 0 2rem;
+      }
+  
+      &--plot > h4 {
+        font-size: 1.4rem;
+      }
+  
+    }
+}
+
+/* ----------- 640px x 360px ----------- */
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .movies-detail {
+
+      &--title {
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+  
+      &--synopsis {
+        flex-direction: column;
+        padding-left: 0;
+      }
+  
+      &--description {
+        padding: 1rem 2rem 2rem;
+      }
+  
+      &--plot {
+        padding: 0 2rem;
+      }
+  
+      &--plot > h4 {
+        font-size: 1.4rem;
+      }
+  
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    .movies-detail {
+
+      &--title {
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+  
+      &--synopsis {
+        flex-direction: column;
+        padding-left: 0;
+      }
+  
+      &--description {
+        padding: 1rem 2rem 2rem;
+      }
+  
+      &--plot {
+        padding: 0 2rem;
+      }
+  
+      &--plot > h4 {
+        font-size: 1.4rem;
+      }
+  
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .movies-detail {
+
+      &--title {
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+  
+      &--synopsis {
+        flex-direction: column;
+        padding-left: 0;
+      }
+  
+      &--description {
+        padding: 1rem 2rem 2rem;
+      }
+  
+      &--plot {
+        padding: 0 2rem;
+      }
+  
+      &--plot > h4 {
+        font-size: 1.4rem;
+      }
+  
+    }
+}
+
+/* ----------- iPhone X ----------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .movies-detail {
+
+      &--title {
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+  
+      &--synopsis {
+        flex-direction: column;
+        padding-left: 0;
+      }
+  
+      &--description {
+        padding: 1rem 2rem 2rem;
+      }
+  
+      &--plot {
+        padding: 0 2rem;
+      }
+  
+      &--plot > h4 {
+        font-size: 1.4rem;
+      }
+  
+    }
+}
+
+/* ----------- Google Pixel XL ----------- */
+@media screen 
+  and (device-width: 411px) 
+  and (device-height: 830px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+    .movies-detail {
+
+      &--title {
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+  
+      &--synopsis {
+        flex-direction: column;
+        padding-left: 0;
+      }
+  
+      &--description {
+        padding: 1rem 2rem 2rem;
+      }
+  
+      &--plot {
+        padding: 0 2rem;
+      }
+  
+      &--plot > h4 {
+        font-size: 1.4rem;
+      }
+  
+    }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .movies-detail {
+
+      &--title {
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+  
+      &--synopsis {
+        flex-direction: column;
+        padding-left: 0;
+      }
+  
+      &--description {
+        padding: 1rem 2rem 2rem;
+      }
+  
+      &--plot {
+        padding: 0 2rem;
+      }
+  
+      &--plot > h4 {
+        font-size: 1.4rem;
+      }
+  
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .movies-detail {
+
+      &--title {
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+  
+      &--synopsis {
+        flex-direction: column;
+        padding-left: 0;
+      }
+  
+      &--description {
+        padding: 1rem 2rem 2rem;
+      }
+  
+      &--plot {
+        padding: 0 2rem;
+      }
+  
+      &--plot > h4 {
+        font-size: 1.4rem;
+      }
+  
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .movies-detail {
+
+      &--title {
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+  
+      &--synopsis {
+        flex-direction: column;
+        padding-left: 0;
+      }
+  
+      &--description {
+        padding: 1rem 2rem 2rem;
+      }
+  
+      &--plot {
+        padding: 0 2rem;
+      }
+  
+      &--plot > h4 {
+        font-size: 1.4rem;
+      }
+  
+    }
+}
