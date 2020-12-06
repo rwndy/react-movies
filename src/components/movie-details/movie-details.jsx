@@ -5,7 +5,7 @@ function MovieDetails({match}) {
   const [detailMovies, setDetailMovies] = useState({})
   const { params } = match
   const fetchDetailsMovies = async id => {
-   const res = await fetch(`http://www.omdbapi.com/?i=${id}&plot=full&apikey=faf7e5bb`)
+   const res = await fetch(`https://www.omdbapi.com/?i=${id}&plot=full&apikey=faf7e5bb`)
    const results = await res.json()
    setDetailMovies(results)
   }
